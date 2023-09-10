@@ -1,0 +1,374 @@
+body, ul, li, h1, h2, a{
+  margin: 0;
+  padding: 0;
+  font-family: tahoma;
+}
+article p{
+  color: #000000;
+  font-size: 18px;
+}
+header{
+  background-color: black;
+  padding: 20px 0;
+  text-align: left;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-size: 25px;
+}
+header .banner .welcome{
+  text-shadow: 5px 5px black;
+}
+header h1{
+  color: white;
+  display: inline-block;
+  padding: 6px 12px;
+}
+.banner{
+  position: relative;
+}
+.banner img{
+  max-width: 100%;
+}
+.banner .welcome{
+  background: transparent;
+  color: rgb(255, 255, 255);
+  padding: 30px;
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  top: 30%;
+} 
+.banner .welcome span{
+  font-size: 1.4em;
+}
+nav{
+  color: whitesmoke;
+  background: rgb(34, 51, 59);
+
+  position: sticky;
+  top: 106px;
+  z-index: 1;
+}
+nav ul{
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+nav li{
+  width: 33%;
+  display: inline-block;
+  font-size: 24px;
+}
+nav li a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+nav li a:hover{
+  color: rgb(169, 146, 100);
+}
+main{
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+article h2{
+  font-size: 48px;
+}
+article p{
+  line-height: 2em;
+  /* color: #4B4B4B; */
+}
+/* article p::first-line{
+  font-weight: bold;
+  font-size: 1.2em;
+} */
+.images{
+  text-align: center;
+  margin: 80px 0;
+  white-space: nowrap;
+}
+.images li{
+  display: inline-block;
+  list-style-type: none;
+  width: 40%;
+  margin: 20px 5%;
+  position: relative;
+}
+.images li:hover{
+  top: -4px;
+}
+.images li img{
+  max-width: 100%;
+}
+section.join{
+  background: #F4F4F4;
+  text-align: center;
+  padding: 60px 20px;
+  color: #4B4B4B;
+}
+section.join h2{
+  font-size: 36px;
+}
+form input{
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 28px;
+  border: 4px solid white;
+}
+form input:focus{
+  border: 4px dashed #4B4B4B;
+  outline: none;
+}
+form input:valid{
+  border: 4px solid #71d300;
+}
+footer{
+  background: rgb(94, 80, 63);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+/* responsive styles//////////////////////////////////////////////// */
+
+@media screen and (max-width: 1400px){
+
+  .banner .welcome{
+    font-size: 40px;
+  }
+
+}
+
+@media screen and (max-width: 960px){
+
+  .banner .welcome{
+    font-size: 28px;
+  }
+  nav li{
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 700px){
+
+  .banner .welcome{
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+  }
+  .banner .welcome br{
+    display: none;
+  }
+  .banner .welcome span{
+    font-size: 1em;
+  }
+  nav li{
+    font-size: 18px;
+  }
+  .images li{
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+
+}
+
+@media screen and (max-width: 560px){
+
+  .banner .welcome{
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+  }
+  .banner .welcome br{
+    display: none;
+  }
+  .banner .welcome span{
+    font-size: 1em;
+  }
+  nav li{
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+  }
+  article h2{
+    font-size: 36px;
+  }
+  header, nav{
+    position: relative;
+    top: 0;
+  }
+  
+
+}
+.welcome h4{
+  text-shadow: 2px 2px black;
+}
+.main-nav li a {
+  font-size: 30px;
+  /* padding: 5px 20 5px 20px; */
+
+}
+
+/* option code//////////////////////////////////////////////////////////// */
+
+.container {
+	font-family: 'Nunito', sans-serif;
+}
+.card{
+	border-radius: 4px;
+	background: #fff;
+	box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+	transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+	padding: 14px 0px 18px 0px;
+	cursor: pointer;
+
+}
+  
+.card:hover{
+	transform: scale(1.05);
+	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card img{
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	max-height: 120px;
+}
+  
+
+@media(max-width: 990px){
+	.card{
+	margin: 20px;
+  }
+} 
+.aryabhavan {
+	padding-left: 35px;
+}
+
+ul{
+	color: rgb(0, 0, 0);
+	padding: 20px;
+	z-index: 1;
+
+}
+ul{
+	white-space: nowrap;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+ul li{
+	width: 33%;
+	display: inline-block;
+	font-size: 24px;
+}
+
+
+
+/* .options-1///////////////////////////////////////////////////////////////// */
+.options-1 .card {
+  margin: 0px 20px 0px 20px;
+}
+.options-1 .card-1{
+	background-image: url(/image/wood\ texture.jpeg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 800px;
+}
+  
+.options-1  .card-2{
+	background-image: url(/image/wood\ texture.jpeg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 700px;
+}
+  
+.options-1 .card-3{
+	background-image: url(/image/wood\ texture.jpeg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 600px;
+  color: rgb(35, 9, 3);
+}
+.options-1 .card-4{
+	background-image: url(/image/wood\ texture.jpeg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 500px;
+}
+  
+.options-1  .card-5{
+	background-image: url(/image/wood\ texture.jpeg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 400px;
+}
+  
+.options-1 .card-6{
+	background-image: url(/image/wood\ texture.jpeg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 900px;
+}
+/* .options-2///////////////////////////////////////////////////////////////// */
+.options-2 .card{
+  margin: 0px 20px 0px 20px;
+}
+.options-2 .card-1{
+    background-image: url(/image/dark\ wood.jpeg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 600px;
+    color: rgb(241, 218, 160);
+}
+    
+.options-2  .card-2{
+    background-image: url(/image/dark\ wood.jpeg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 800px;
+    color: rgb(241, 218, 160);
+}
+    
+.options-2 .card-3{
+    background-image: url(/image/dark\ wood.jpeg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 700px;
+    color: rgb(241, 218, 160);
+} 
+.options-2 .card-4{
+  background-image: url(/image/dark\ wood.jpeg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 600px;
+  color: rgb(241, 218, 160);
+}
+  
+.options-2  .card-5{
+  background-image: url(/image/dark\ wood.jpeg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 800px;
+  color: rgb(241, 218, 160);
+}
+  
+.options-2 .card-6{
+  background-image: url(/image/dark\ wood.jpeg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 700px;
+  color: rgb(241, 218, 160);
+} 
+.test p{
+  box-shadow: 10px 10px black; 
+}
